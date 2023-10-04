@@ -48,12 +48,8 @@ const Shop = () => {
     }, [products])
 
     const handleAddToCart = (product) => {
-
-
         // const newCart = [...cart, product];
-
         let newCart = [];
-
         //if product doesn't exits  in the cart, then set quantity =1
         // if exit update quantity by 1
 
@@ -66,7 +62,6 @@ const Shop = () => {
             exists.quantity = exists.quantity + 1;
             const remaining = cart.filter(pd => pd.id !== product.id);
             newCart= [...remaining,exists];
-            // newCart = [...remaining, exists];
         }
 
         setCart(newCart);
@@ -93,5 +88,4 @@ const Shop = () => {
         </div>
     );
 };
-
 export default Shop;
