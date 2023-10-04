@@ -7,10 +7,9 @@ const Cart = (props) => {
     for (const product of cart) {
         total=total+product.price;
         console.log(total);
-        
     }
     return (
-        <div className="cart">
+        <div className="cart1">
             <h4>Order Summary</h4>
             <p>Selected Items:{cart.length} </p>
             <p>Total Price: ${total}</p>
